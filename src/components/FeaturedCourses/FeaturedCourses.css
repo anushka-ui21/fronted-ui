@@ -1,0 +1,85 @@
+.featured-courses {
+  background: linear-gradient(180deg, #f4f9ff, #eaf3ff);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.fc-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.fc-title span {
+  color: #1e88e5;
+}
+
+.fc-subtitle {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.fc-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fc-card {
+  background: #1e66e3;
+  color: #fff;
+  width: 160px;
+  padding: 25px 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.fc-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fc-icon {
+  background: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fc-icon img {
+  width: 35px;
+  height: auto;
+}
+
+.fc-card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.fc-card p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.fc-btn {
+  margin-top: 40px;
+  padding: 10px 26px;
+  border-radius: 8px;
+  border: none;
+  background: #1e66e3;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fc-btn:hover {
+  background: #0d47a1;
+}

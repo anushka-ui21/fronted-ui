@@ -1,0 +1,186 @@
+.footer {
+  background: linear-gradient(120deg, #5a07b9 0%, #4A16BD 100%);
+  color: #fff;
+  margin-top: 60px;      /* 🔥 only top gap */
+}
+
+/* SAME WIDTH AS HERO */
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 40px 30px;
+}
+
+/* ================= TOP ================= */
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+/* LEFT COLUMN */
+.footer-col:first-child {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 🔥 IFAS LOGO */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.footer-brand img {
+  width: 124px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* DESCRIPTION */
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+  opacity: 0.9;
+}
+
+.footer-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* ================= STORE BUTTONS ================= */
+
+.store-buttons {
+  display: flex;              /* 🔥 MAIN FIX */
+  gap: 14px;
+  flex-wrap: nowrap;
+}
+
+.store-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 10px;
+  padding: 8px 16px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.store-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.store-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+.store-text span {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.store-text strong {
+  font-size: 13px;
+}
+
+/* ================= MIDDLE COLUMN ================= */
+
+.footer-col:nth-child(2) {
+  padding-left: 40px;
+}
+
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* ================= RIGHT COLUMN ================= */
+
+.footer-col:last-child {
+  padding-left: 20px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-item img {
+  width: 16px;
+  height: 16px;
+}
+
+.contact-item span {
+  max-width: 260px;
+  opacity: 0.85;
+}
+
+.contact-item.address {
+  align-items: flex-start;
+}
+
+/* ================= BOTTOM ================= */
+
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons img {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.social-icons img:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}

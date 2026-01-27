@@ -1,0 +1,43 @@
+.newsletter-wrapper {
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.newsletter-image-box {
+  position: relative;
+  width: 100%;
+  max-width: 800px;   /* 👈 image small size */
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* image as-it-is */
+.newsletter-image-box img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+}
+
+/* paragraph placed BELOW heading (inside image) */
+.newsletter-text {
+  position: absolute;
+  top: 75px;           /* 👈 heading च्या खाली */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 620px;
+  text-align: center;
+  font-size: 14px;
+  color: #f1f5f9;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .newsletter-text {
+    top: 75px;
+    font-size: 13px;
+  }
+}
