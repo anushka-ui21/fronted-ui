@@ -22,11 +22,12 @@
   font-weight: 700;
 }
 
-
 .subtitle {
   color: #555;
   margin-bottom: 40px;
 }
+
+/* ---------- GRID ---------- */
 
 .features-grid {
   display: grid;
@@ -36,6 +37,7 @@
   margin: auto;
 }
 
+/* ---------- CARD ---------- */
 
 .feature-card {
   background: white;
@@ -65,22 +67,58 @@
   color: #666;
 }
 
-/* ---------- Responsive Design ---------- */
+/* ---------- RESPONSIVE (NO DESIGN CHANGE) ---------- */
 
+/* Laptop / small desktop */
 @media (max-width: 1024px) {
   .features-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* Tablet */
 @media (max-width: 768px) {
+  .features {
+    padding: 50px 20px;
+  }
+
+  .features h2,
+  .features-title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-bottom: 30px;
+  }
+
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
+  .features {
+    padding: 40px 16px;
+  }
+
+  .features h2,
+  .features-title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
   .features-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .feature-card {
+    padding: 26px 18px;
   }
 }

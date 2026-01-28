@@ -19,31 +19,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px;   /* 🔥 left & right equal breathing space */
+  padding: 0 100px;
   position: relative;
   z-index: 2;
 }
-
-
 
 /* ---------- TEXT ---------- */
 
 .hero-text {
   width: 55%;
-  padding-left: 0;   /* 🔥 60px काढ */
   text-align: left;
 }
-
-
 
 .hero-text h1 {
   font-size: 52px;
   font-weight: 700;
-  line-height: 1.1;   /* 🔥 थोडं tight like image */
-  margin-left: 0;
+  line-height: 1.1;
 }
-
-
 
 .hero-text span {
   color: #22d3ee;
@@ -52,22 +44,16 @@
 .hero-text p {
   font-size: 13px;
   opacity: 0.8;
-  margin-top: 39px;     /* 🔥 heading पासून जास्त gap */
-  margin-bottom: 39px; /* 🔥 buttons पासून जास्त gap */
+  margin: 39px 0;
   max-width: 420px;
 }
-
-
 
 /* ---------- BUTTONS ---------- */
 
 .hero-buttons {
   display: flex;
   gap: 15px;
-  margin-top: 10px;   /* 🔥 paragraph–buttons breathing space */
 }
-
-
 
 .btn-primary {
   background: white;
@@ -91,41 +77,35 @@
 .hero-image {
   position: absolute;
   right: 0;
-  bottom: -150px;   /* 🔥 boy khali */
-  z-index: 1;
+  bottom: -150px;
 }
 
 .hero-image img {
   width: 760px;
-  max-width: none;
-  height: auto;
   transform: scaleX(-1);
 }
 
-/* ---------- NOTE NEAR HEAD ---------- */
+/* ---------- NOTE ---------- */
 
 .hero-note {
   position: absolute;
-  top: 10px;        /* 🔼 वर खाली control */
-  right: 390px;     /* 🔥 LEFT ला आणण्यासाठी value वाढव */
+  top: 10px;
+  right: 390px;
   display: flex;
   gap: 12px;
-  align-items: flex-start;
 }
 
-
 .note-line {
-  position: relative;
   width: 1.5px;
   height: 110px;
   background: rgba(255,255,255,0.85);
+  position: relative;
 }
 
-/* 🔥 green spot line च्या खाली */
 .note-line::before {
   content: "";
   position: absolute;
-  bottom: 50px;              /* 👈 spot खाली आणला */
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   width: 9px;
@@ -134,39 +114,23 @@
   border-radius: 50%;
 }
 
-
-
-
-
 .note-text {
   max-width: 210px;
   font-size: 10.5px;
   line-height: 1.6;
 }
 
-.note-text strong {
-  font-size: 11px;
-  font-weight: 600;
-}
-
-.note-text p {
-  margin-top: 6px;
-  opacity: 0.8;
-}
-
 .stars {
   margin-top: 6px;
   color: #22d3ee;
-  font-size: 11px;
 }
 
-/* ---------- BOTTOM CURVES ---------- */
+/* ---------- CIRCLES ---------- */
 
 .hero-circles {
   position: absolute;
   bottom: 20px;
-  left: 42%;     /* 🔥 left ला */
-  z-index: 0;
+  left: 42%;
 }
 
 .hero-circles span {
@@ -175,26 +139,11 @@
   border-radius: 50%;
 }
 
-.hero-circles span:nth-child(1) {
-  width: 120px;
-  height: 120px;
-}
+.hero-circles span:nth-child(1) { width: 120px; height: 120px; }
+.hero-circles span:nth-child(2) { width: 160px; height: 160px; top: -18px; left: -18px; }
+.hero-circles span:nth-child(3) { width: 200px; height: 200px; top: -36px; left: -36px; }
 
-.hero-circles span:nth-child(2) {
-  width: 160px;
-  height: 160px;
-  top: -18px;
-  left: -18px;
-}
-
-.hero-circles span:nth-child(3) {
-  width: 200px;
-  height: 200px;
-  top: -36px;
-  left: -36px;
-}
-
-/* ---------- MOBILE ---------- */
+/* ---------- MOBILE / TABLET ---------- */
 
 @media (max-width: 900px) {
   .hero-container {
@@ -204,7 +153,6 @@
 
   .hero-text {
     width: 100%;
-    padding-left: 0;
   }
 
   .hero-buttons {
@@ -212,7 +160,8 @@
   }
 
   .hero-image {
-    position: static;
+    position: relative;
+    bottom: 0;
     margin-top: 40px;
   }
 
@@ -221,8 +170,49 @@
     transform: none;
   }
 
-  .hero-note,
+  .hero-note {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
   .hero-circles {
-    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-image img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 260px;
+  }
+
+  .hero-circles {
+    transform: translateX(-50%) scale(0.7);
   }
 }

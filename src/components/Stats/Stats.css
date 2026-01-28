@@ -9,7 +9,7 @@
   color: #fff;
 }
 
-/* 🔵 LEFT – 3 THIN CURVED LINES (REFERENCE STYLE) */
+/*  THIN CURVED LINES  */
 
 /* Curve 1 */
 .stats::before {
@@ -167,7 +167,7 @@
     font-size: 18px;
   }
 
-  /* curves hide on mobile */
+ 
   .stats::before,
   .stats::after,
   .stats .arc-3 {
